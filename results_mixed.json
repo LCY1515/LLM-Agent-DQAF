@@ -1,0 +1,23 @@
+{
+  "accuracy": 0.863487611033193,
+  "recall": 0.335,
+  "f1": 0.3145539906103286,
+  "raw_data_size": 2000,
+  "noisy_data_size": 2139,
+  "clean_data_size": 1983,
+  "metrics": [
+    "Top 50\n",
+    "Hit Ratio:0.4469903618839789\n",
+    "Precision:0.05722933643771828\n",
+    "Recall:0.5057245059550003\n",
+    "NDCG:0.2772626187950533\n"
+  ],
+  "threshold_eval": [
+    {
+      "threshold": 0.7,
+      "accuracy": 0.863487611033193,
+      "recall": 0.335,
+      "f1": 0.3145539906103286
+    }
+  ]
+}

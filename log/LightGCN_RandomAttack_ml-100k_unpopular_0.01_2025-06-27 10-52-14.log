@@ -1,0 +1,162 @@
+2025-06-27 10:52:14,329 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommend Model Infomation----------
+batch_size:2048
+cuda:True
+data_path:data/clean/
+dataset:ml-100k
+dropout:True
+dropout_rate:0.3
+emb_size:64
+gpu_id:0
+lRate:0.005
+load:True
+maxEpoch:30
+model_name:LightGCN
+n_layers:2
+reg:0.0001
+save:True
+save_dir:./modelsaved/
+seed:2018
+test_data:/test.txt
+topK:50
+training_data:/train.txt
+val_data:/val.txt
+
+2025-06-27 10:52:14,329 - LightGCN attack by RandomAttack - INFO - 
+
+----------Attack Model Infomation----------
+Epoch:5
+attackCategory:Black
+attackModelName:RandomAttack
+attackTargetChooseWay:unpopular
+gradIterationNum:10
+gradMaxLimitation:1
+gradNumLimitation:60
+innerEpoch:6
+maliciousFeedbackSize:0
+maliciousUserSize:0.01
+outerEpoch:2
+poisonDatasetOutPath:data/poison/
+poisondataSaveFlag:False
+targetSize:5
+times:5
+
+2025-06-27 10:52:38,298 - LightGCN attack by RandomAttack - INFO - Recommender model LightGCN is tested in clean data
+
+----------Test Result (Evaluation Metrics @Top-(50)) in Clean Data----------
+Top 50
+Hit Ratio:0.45062738679759956
+Precision:0.05769499417927823
+Recall:0.5069417980264884
+NDCG:0.2789162924565437
+
+2025-06-27 10:52:38,299 - LightGCN attack by RandomAttack - INFO - Poison Data Generating...
+2025-06-27 10:52:39,639 - LightGCN attack by RandomAttack - INFO - Data attack No.1 by RandomAttack has done.
+2025-06-27 10:52:40,759 - LightGCN attack by RandomAttack - INFO - Data attack No.2 by RandomAttack has done.
+2025-06-27 10:52:41,884 - LightGCN attack by RandomAttack - INFO - Data attack No.3 by RandomAttack has done.
+2025-06-27 10:52:42,884 - LightGCN attack by RandomAttack - INFO - Data attack No.4 by RandomAttack has done.
+2025-06-27 10:52:43,938 - LightGCN attack by RandomAttack - INFO - Data attack No.5 by RandomAttack has done.
+2025-06-27 10:52:57,343 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommender Test Result in Poisoning Environment No.0 (Evaluation Metrics @Top-(50))----------
+Top 50
+Hit Ratio:0.45062738679759956
+Precision:0.05769499417927823
+Recall:0.5093740860286649
+NDCG:0.27833748885716364
+
+----------Target Attack Test Result in Poisoning Environment No.0 (Evaluation Metrics @Top-(50))----------
+Top 50
+HitRate : 0.0016824395373291271
+Precision : 0.0001892744479495268
+Recall : 0.0018927444794952682
+NDCG : 0.0007069850286817634
+
+2025-06-27 10:53:13,541 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommender Test Result in Poisoning Environment No.1 (Evaluation Metrics @Top-(50))----------
+Top 50
+Hit Ratio:0.4448081469358065
+Precision:0.0569499417927823
+Recall:0.500098697488837
+NDCG:0.27868372483753967
+
+----------Target Attack Test Result in Poisoning Environment No.1 (Evaluation Metrics @Top-(50))----------
+Top 50
+HitRate : 0.0008412197686645637
+Precision : 8.412197686645637e-05
+Recall : 0.0008412197686645636
+NDCG : 0.00031355044844609217
+
+2025-06-27 10:53:28,946 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommender Test Result in Poisoning Environment No.2 (Evaluation Metrics @Top-(50))----------
+Top 50
+Hit Ratio:0.4480814693580651
+Precision:0.05736903376018626
+Recall:0.5073809983792966
+NDCG:0.2800678915843218
+
+----------Target Attack Test Result in Poisoning Environment No.2 (Evaluation Metrics @Top-(50))----------
+Top 50
+HitRate : 0.0006309148264984228
+Precision : 6.309148264984228e-05
+Recall : 0.0006309148264984228
+NDCG : 0.0002765541907189684
+
+2025-06-27 10:53:44,437 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommender Test Result in Poisoning Environment No.3 (Evaluation Metrics @Top-(50))----------
+Top 50
+Hit Ratio:0.4504455355519185
+Precision:0.05767171129220023
+Recall:0.5121429294811067
+NDCG:0.2843800792418233
+
+----------Target Attack Test Result in Poisoning Environment No.3 (Evaluation Metrics @Top-(50))----------
+Top 50
+HitRate : 0.0025236593059936906
+Precision : 0.0002944269190325973
+Recall : 0.0029442691903259727
+NDCG : 0.0012882086870059871
+
+2025-06-27 10:53:59,413 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommender Test Result in Poisoning Environment No.4 (Evaluation Metrics @Top-(50))----------
+Top 50
+Hit Ratio:0.4464448081469358
+Precision:0.05715948777648428
+Recall:0.5007397883585283
+NDCG:0.2781727929661552
+
+----------Target Attack Test Result in Poisoning Environment No.4 (Evaluation Metrics @Top-(50))----------
+Top 50
+HitRate : 0.0006309148264984228
+Precision : 6.309148264984228e-05
+Recall : 0.0006309148264984228
+NDCG : 0.0002234808794681345
+
+2025-06-27 10:53:59,415 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommender Test Result in Poisoning Environment on Average (Evaluation Metrics @Top-(50))----------
+Top 50
+Hit Ratio: : 0.44849063466084743
+Precision: : 0.05742142025611176
+Recall: : 0.5072491778444762
+NDCG: : 0.28036729613021205
+
+---------- Global Recommender Performance Variation----------
+Top 50
+Hit Ratio: : -0.004741727199354332
+Precision: : -0.004741727199354354
+Recall: : 0.000606341436402542
+NDCG: : 0.005202290841057546
+
+----------Target Attack Test Result Poisoning Environment on Average (Evaluation Metrics @Top-(50))----------
+Top 50
+HitRate : 0.0012618296529968453
+Precision : 0.00013880126182965299
+Recall : 0.00138801261829653
+NDCG : 0.0005617558468641891
+

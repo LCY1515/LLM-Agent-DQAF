@@ -1,0 +1,59 @@
+2025-06-26 23:33:54,630 - LightGCN attack by RandomAttack - INFO - 
+
+----------Recommend Model Infomation----------
+batch_size:2048
+cuda:True
+data_path:data/clean/
+dataset:ml-100k
+dropout:True
+dropout_rate:0.3
+emb_size:64
+gpu_id:0
+lRate:0.005
+load:True
+maxEpoch:30
+model_name:LightGCN
+n_layers:2
+reg:0.0001
+save:True
+save_dir:./modelsaved/
+seed:2018
+test_data:/test.txt
+topK:50
+training_data:/train.txt
+val_data:/val.txt
+
+2025-06-26 23:33:54,630 - LightGCN attack by RandomAttack - INFO - 
+
+----------Attack Model Infomation----------
+Epoch:5
+attackCategory:Black
+attackModelName:RandomAttack
+attackTargetChooseWay:unpopular
+gradIterationNum:10
+gradMaxLimitation:1
+gradNumLimitation:60
+innerEpoch:6
+maliciousFeedbackSize:0
+maliciousUserSize:0.01
+outerEpoch:2
+poisonDatasetOutPath:data/poison/
+poisondataSaveFlag:False
+targetSize:5
+times:5
+
+2025-06-26 23:34:19,110 - LightGCN attack by RandomAttack - INFO - Recommender model LightGCN is tested in clean data
+
+----------Test Result (Evaluation Metrics @Top-(50)) in Clean Data----------
+Top 50
+Hit Ratio:0.4518881626724764
+Precision:0.05898104265402843
+Recall:0.5215663156218889
+NDCG:0.2860273477566503
+
+2025-06-26 23:34:19,112 - LightGCN attack by RandomAttack - INFO - Poison Data Generating...
+2025-06-26 23:34:20,340 - LightGCN attack by RandomAttack - INFO - Data attack No.1 by RandomAttack has done.
+2025-06-26 23:34:21,695 - LightGCN attack by RandomAttack - INFO - Data attack No.2 by RandomAttack has done.
+2025-06-26 23:34:23,058 - LightGCN attack by RandomAttack - INFO - Data attack No.3 by RandomAttack has done.
+2025-06-26 23:34:24,183 - LightGCN attack by RandomAttack - INFO - Data attack No.4 by RandomAttack has done.
+2025-06-26 23:34:25,301 - LightGCN attack by RandomAttack - INFO - Data attack No.5 by RandomAttack has done.
